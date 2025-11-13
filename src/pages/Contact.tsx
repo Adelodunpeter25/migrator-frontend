@@ -121,7 +121,7 @@ const Contact = () => {
                     <Label htmlFor="message" className="text-lg">Message</Label>
                     <textarea
                       id="message"
-                      rows={5}
+                      rows={3}
                       placeholder="Tell us more about your inquiry..."
                       className="mt-2 w-full px-3 py-2 text-lg bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                     />
