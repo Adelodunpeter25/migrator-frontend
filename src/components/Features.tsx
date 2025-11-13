@@ -39,7 +39,7 @@ const Features = () => {
           <h2 className="text-5xl sm:text-6xl font-bold mb-4">
             Everything you need, <span className="gradient-text">nothing you don't</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
             Migrator provides a simple, powerful interface for managing your database schema
           </p>
         </motion.div>
@@ -56,13 +56,13 @@ const Features = () => {
               <Card className="p-8 bg-card border-border hover:border-primary/50 transition-all duration-300 group h-full">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-gradient-primary border border-border group-hover:glow-cyan transition-all duration-300">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                    <feature.icon className="h-7 w-7 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-semibold mb-2 group-hover:text-primary transition-colors">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>
                   </div>

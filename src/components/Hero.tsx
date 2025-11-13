@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="gradient-text">made simple</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-muted-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-xl sm:text-2xl text-foreground/80 leading-relaxed max-w-2xl">
               A lightweight CLI tool that brings Django-like migrations to FastAPI and Flask. 
               Powered by Alembic, simplified for developers.
             </p>
