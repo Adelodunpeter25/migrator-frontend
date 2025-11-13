@@ -20,16 +20,16 @@ const Navbar = () => {
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-base text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#features" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            <Link to="/blog" className="text-base text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/blog" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
               Blog
             </Link>
-            <Link to="/docs" className="text-base text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/docs" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </Link>
-            <Link to="/about" className="text-base text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/about" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
           </div>
