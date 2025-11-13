@@ -33,6 +33,9 @@ const Navbar = memo(() => {
             <Link to="/about" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
+            <Link to="/contact" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
+              Contact
+            </Link>
           </div>
 
           <div className="flex items-center gap-3">
