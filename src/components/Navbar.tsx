@@ -9,7 +9,7 @@ const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-auto"
+      className="fixed top-4 left-0 right-0 z-50 flex justify-center"
     >
       <div className="bg-background/80 backdrop-blur-xl border border-border/40 rounded-full px-6 py-3 shadow-lg">
         <div className="flex items-center gap-8">
