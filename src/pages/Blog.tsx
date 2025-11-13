@@ -53,10 +53,10 @@ const Blog = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl sm:text-6xl font-bold mb-4">
+            <h1 className="text-6xl sm:text-7xl font-bold mb-4">
               Blog & <span className="gradient-text">Tutorials</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
               Learn how to get the most out of Migrator with guides, tutorials, and best practices
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ const Blog = () => {
                 <Link to={`/blog/${post.id}`}>
                   <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 group h-full">
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-3 text-base text-muted-foreground">
                         <span className="px-3 py-1 rounded-full bg-gradient-primary border border-border text-foreground font-medium">
                           {post.category}
                         </span>
@@ -86,17 +86,17 @@ const Blog = () => {
                         </div>
                       </div>
                       
-                      <h2 className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      <h2 className="text-3xl font-bold group-hover:text-primary transition-colors">
                         {post.title}
                       </h2>
                       
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-lg text-muted-foreground leading-relaxed">
                         {post.excerpt}
                       </p>
                       
-                      <div className="flex items-center text-primary font-medium group-hover:gap-2 transition-all">
+                      <div className="flex items-center text-lg text-primary font-medium group-hover:gap-2 transition-all">
                         Read article
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   </Card>
