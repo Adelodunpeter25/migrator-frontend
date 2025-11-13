@@ -36,7 +36,7 @@ const Features = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-4">
             Everything you need, <span className="gradient-text">nothing you don't</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
