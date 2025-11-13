@@ -18,10 +18,10 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl sm:text-6xl font-bold mb-4">
+            <h1 className="text-6xl sm:text-7xl font-bold mb-4">
               About <span className="gradient-text">Migrator</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
               Building better tools for Python developers
             </p>
           </motion.div>
@@ -36,11 +36,11 @@ const About = () => {
             <Card className="p-8 bg-card border-border">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 rounded-xl bg-gradient-primary border border-border">
-                  <Target className="h-6 w-6 text-primary" />
+                  <Target className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
+                  <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                     <p>
                       Migrator was born out of a simple observation: database migrations shouldn't be complicated. 
                       While Django developers have long enjoyed the simplicity of <code className="text-foreground bg-muted px-2 py-1 rounded">manage.py migrate</code>, 
@@ -67,14 +67,14 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-16"
           >
-            <h2 className="text-3xl font-bold mb-8 text-center">Core Values</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Core Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="p-8 bg-card border-border text-center group hover:border-primary/50 transition-all">
                 <div className="inline-flex p-4 rounded-xl bg-gradient-primary border border-border group-hover:glow-cyan transition-all mb-4">
                   <Rocket className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Simplicity First</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-semibold mb-3">Simplicity First</h3>
+                <p className="text-lg text-muted-foreground">
                   We prioritize simplicity and ease of use without sacrificing power or flexibility.
                 </p>
               </Card>
@@ -83,8 +83,8 @@ const About = () => {
                 <div className="inline-flex p-4 rounded-xl bg-gradient-primary border border-border group-hover:glow-cyan transition-all mb-4">
                   <Users className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Developer Experience</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-semibold mb-3">Developer Experience</h3>
+                <p className="text-lg text-muted-foreground">
                   Every feature is designed with the developer experience in mind, from clear error messages to intuitive commands.
                 </p>
               </Card>
@@ -93,8 +93,8 @@ const About = () => {
                 <div className="inline-flex p-4 rounded-xl bg-gradient-primary border border-border group-hover:glow-cyan transition-all mb-4">
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Open Source</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-semibold mb-3">Open Source</h3>
+                <p className="text-lg text-muted-foreground">
                   We're committed to open source and building tools that benefit the entire Python community.
                 </p>
               </Card>
@@ -108,12 +108,12 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mb-16"
           >
-            <h2 className="text-3xl font-bold mb-8 text-center">Built With</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Built With</h2>
             <Card className="p-8 bg-card border-border">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Technology</h3>
-                  <ul className="space-y-3 text-muted-foreground">
+                  <h3 className="text-2xl font-semibold mb-4">Technology</h3>
+                  <ul className="space-y-3 text-lg text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
                       <span><strong className="text-foreground">Python</strong> - The foundation of our CLI tool</span>
@@ -134,8 +134,8 @@ const About = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Compatibility</h3>
-                  <ul className="space-y-3 text-muted-foreground">
+                  <h3 className="text-2xl font-semibold mb-4">Compatibility</h3>
+                  <ul className="space-y-3 text-lg text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
                       <span><strong className="text-foreground">FastAPI</strong> - Full support for async applications</span>
@@ -167,8 +167,8 @@ const About = () => {
           >
             <Card className="p-12 bg-card border-border">
               <Github className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h2 className="text-3xl font-bold mb-4">Open Source & Community Driven</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+              <h2 className="text-4xl font-bold mb-4">Open Source & Community Driven</h2>
+              <p className="text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
                 Migrator is open source and welcomes contributions from developers around the world. 
                 Join us in making database migrations simpler for everyone.
               </p>
@@ -190,7 +190,7 @@ const About = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-border hover:bg-muted"
+                  className="border-border hover:bg-muted hover:text-foreground"
                   asChild
                 >
                   <a 

@@ -2,12 +2,12 @@ import { Github, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border/40 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+    <footer className="border-t border-border/40 py-8 px-4 sm:px-6 lg:px-8 mt-20">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <span className="text-2xl font-mono font-bold gradient-text">Migrator</span>
-            <p className="text-sm text-muted-foreground mt-2">
+            <span className="text-3xl font-mono font-bold gradient-text">Migrator</span>
+            <p className="text-base text-muted-foreground mt-2">
               Database migrations, made simple
             </p>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
+        <div className="mt-6 pt-6 border-t border-border/40 text-center text-sm text-muted-foreground">
           <p>© 2025 Migrator. Open source under MIT License.</p>
         </div>
       </div>
