@@ -175,7 +175,7 @@ const About = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg"
                   asChild
                 >
                   <a 
@@ -190,7 +190,7 @@ const About = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-border hover:bg-muted hover:text-foreground"
+                  className="border-border hover:bg-muted hover:text-foreground text-lg"
                   asChild
                 >
                   <a 

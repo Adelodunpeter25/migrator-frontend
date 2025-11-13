@@ -2,7 +2,7 @@ import { Github, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border/40 py-6 px-4 sm:px-6 lg:px-8 mt-20">
+    <footer className="border-t-2 border-primary/20 py-6 px-4 sm:px-6 lg:px-8 mt-20 bg-card/30">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
