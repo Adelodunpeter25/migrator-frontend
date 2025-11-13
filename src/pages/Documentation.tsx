@@ -216,38 +216,38 @@ db = SQLAlchemy(app)`}</code>
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <Book className="h-8 w-8 text-primary" />
-              <h2 className="text-4xl font-bold">Best Practices</h2>
+              <Book className="h-10 w-10 text-primary" />
+              <h2 className="text-5xl font-bold">Best Practices</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6 bg-card border-border">
-                <GitBranch className="h-6 w-6 text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-3">Version Control</h3>
-                <p className="text-lg text-muted-foreground">
+              <Card className="p-8 bg-card border-border">
+                <GitBranch className="h-8 w-8 text-primary mb-4" />
+                <h3 className="text-3xl font-semibold mb-4">Version Control</h3>
+                <p className="text-xl text-muted-foreground">
                   Always commit your migration files to version control alongside your code changes. This ensures your team has a consistent database schema.
                 </p>
               </Card>
 
-              <Card className="p-6 bg-card border-border">
-                <Code className="h-6 w-6 text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-3">Descriptive Names</h3>
-                <p className="text-lg text-muted-foreground">
+              <Card className="p-8 bg-card border-border">
+                <Code className="h-8 w-8 text-primary mb-4" />
+                <h3 className="text-3xl font-semibold mb-4">Descriptive Names</h3>
+                <p className="text-xl text-muted-foreground">
                   Use clear, descriptive names for your migrations that explain what changes are being made. This makes debugging and reviewing migrations easier.
                 </p>
               </Card>
 
-              <Card className="p-6 bg-card border-border">
-                <Database className="h-6 w-6 text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-3">Test First</h3>
-                <p className="text-lg text-muted-foreground">
+              <Card className="p-8 bg-card border-border">
+                <Database className="h-8 w-8 text-primary mb-4" />
+                <h3 className="text-3xl font-semibold mb-4">Test First</h3>
+                <p className="text-xl text-muted-foreground">
                   Always test migrations in a development or staging environment before applying them to production databases.
                 </p>
               </Card>
 
-              <Card className="p-6 bg-card border-border">
-                <Zap className="h-6 w-6 text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-3">Small Increments</h3>
-                <p className="text-lg text-muted-foreground">
+              <Card className="p-8 bg-card border-border">
+                <Zap className="h-8 w-8 text-primary mb-4" />
+                <h3 className="text-3xl font-semibold mb-4">Small Increments</h3>
+                <p className="text-xl text-muted-foreground">
                   Break large schema changes into smaller, incremental migrations. This makes it easier to rollback if needed and reduces risk.
                 </p>
               </Card>

@@ -33,14 +33,14 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-16"
           >
-            <Card className="p-8 bg-card border-border">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="p-3 rounded-xl bg-gradient-primary border border-border">
-                  <Target className="h-7 w-7 text-primary" />
+            <Card className="p-10 bg-card border-border">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="p-4 rounded-xl bg-gradient-primary border border-border">
+                  <Target className="h-9 w-9 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
-                  <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                  <h2 className="text-5xl font-bold mb-6">Our Mission</h2>
+                  <div className="space-y-6 text-xl text-muted-foreground leading-relaxed">
                     <p>
                       Migrator was born out of a simple observation: database migrations shouldn't be complicated. 
                       While Django developers have long enjoyed the simplicity of <code className="text-foreground bg-muted px-2 py-1 rounded">manage.py migrate</code>, 
