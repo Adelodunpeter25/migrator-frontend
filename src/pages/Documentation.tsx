@@ -149,6 +149,26 @@ const Documentation = () => {
                   migrator current
                 </pre>
               </Card>
+
+              <Card className="p-6 bg-card border-border">
+                <h3 className="text-2xl font-semibold mb-3">migrator stamp</h3>
+                <p className="text-lg text-muted-foreground mb-3">
+                  Mark database as migrated without running migrations. Useful for existing databases.
+                </p>
+                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                  migrator stamp head
+                </pre>
+              </Card>
+
+              <Card className="p-6 bg-card border-border">
+                <h3 className="text-2xl font-semibold mb-3">migrator status</h3>
+                <p className="text-lg text-muted-foreground mb-3">
+                  Show the current migration status and pending migrations.
+                </p>
+                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                  migrator status
+                </pre>
+              </Card>
             </div>
           </motion.section>
 
