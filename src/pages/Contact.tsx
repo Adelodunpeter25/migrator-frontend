@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -8,6 +9,39 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Contact = () => {
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus('');
+    
+    try {
+      const res = await fetch('https://contact-fast.vercel.app/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          to: 'adelodunpeter24@gmail.com',
+          website_name: 'Migrator',
+          website_url: 'https://migrator-cli.dev',
+          ...form
+        })
+      });
+
+      const data = await res.json();
+      setStatus(data.message || data.detail);
+      if (res.ok) {
+        setForm({ name: '', email: '', subject: '', message: '' });
+      }
+    } catch (error) {
+      setStatus('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -88,13 +122,16 @@ const Contact = () => {
               <Card className="p-8 bg-card border-border">
                 <h2 className="text-3xl font-bold mb-6">Send a Message</h2>
                 
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Label htmlFor="name" className="text-lg">Name</Label>
                     <Input 
                       id="name" 
                       placeholder="Your name"
                       className="mt-2 text-lg"
+                      value={form.name}
+                      onChange={(e) => setForm({...form, name: e.target.value})}
+                      required
                     />
                   </div>
 
@@ -105,6 +142,9 @@ const Contact = () => {
                       type="email"
                       placeholder="your.email@example.com"
                       className="mt-2 text-lg"
+                      value={form.email}
+                      onChange={(e) => setForm({...form, email: e.target.value})}
+                      required
                     />
                   </div>
 
@@ -114,6 +154,9 @@ const Contact = () => {
                       id="subject" 
                       placeholder="How can we help?"
                       className="mt-2 text-lg"
+                      value={form.subject}
+                      onChange={(e) => setForm({...form, subject: e.target.value})}
+                      required
                     />
                   </div>
 
@@ -124,6 +167,9 @@ const Contact = () => {
                       rows={3}
                       placeholder="Tell us more about your inquiry..."
                       className="mt-2 w-full px-3 py-2 text-lg bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                      value={form.message}
+                      onChange={(e) => setForm({...form, message: e.target.value})}
+                      required
                     />
                   </div>
 
@@ -131,10 +177,17 @@ const Contact = () => {
                     type="submit"
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg"
+                    disabled={isSubmitting}
                   >
                     <Send className="mr-2 h-5 w-5" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
+
+                  {status && (
+                    <p className={`text-center text-lg ${status.includes('success') || status.includes('sent') ? 'text-green-500' : 'text-red-500'}`}>
+                      {status}
+                    </p>
+                  )}
                 </form>
               </Card>
             </motion.div>
