@@ -25,7 +25,7 @@ const Contact = () => {
         body: JSON.stringify({
           to: 'adelodunpeter24@gmail.com',
           website_name: 'Migrator',
-          website_url: 'https://migrator-cli.dev',
+          website_url: 'https://migrator-cli.vercel.app',
           ...form
         })
       });
