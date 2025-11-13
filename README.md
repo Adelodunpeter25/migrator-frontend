@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# Migrator Frontend
 
-## Project info
+Official website and documentation for Migrator - a lightweight CLI tool that brings Django-like migrations to FastAPI and Flask.
 
-**URL**: https://lovable.dev/projects/56b328a8-26de-4980-9602-07d67e315eab
+## About Migrator
 
-## How can I edit this code?
+Migrator simplifies database migrations for Python web applications. Built on top of Alembic, it provides an intuitive, Django-inspired interface for managing database schema changes in FastAPI and Flask projects.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 🚀 Zero configuration setup
+- ⚡ FastAPI and Flask support
+- 🔧 Powered by Alembic
+- 📝 Simple CLI commands
+- 🎨 Modern, responsive design
+- 📱 Mobile-friendly interface
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/56b328a8-26de-4980-9602-07d67e315eab) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Framework**: React 18 + TypeScript
+- **Build Tool**: Vite 5
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI)
+- **Animations**: Framer Motion
+- **Routing**: React Router v6
+- **State Management**: TanStack Query
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone <repository-url>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd migrator-frontend
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/     # Reusable components
+│   ├── ui/        # shadcn/ui components
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Features.tsx
+│   └── Footer.tsx
+├── pages/         # Route pages
+│   ├── Index.tsx
+│   ├── Blog.tsx
+│   ├── Documentation.tsx
+│   ├── About.tsx
+│   └── NotFound.tsx
+├── hooks/         # Custom React hooks
+├── lib/           # Utility functions
+└── App.tsx        # Main application component
+```
 
-This project is built with:
+## Design System
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Font**: Grenze (serif)
+- **Monospace**: JetBrains Mono
+- **Colors**: Dark theme with cyan/purple gradients
+- **Primary**: Cyan (#00D9FF)
+- **Secondary**: Purple (#B366FF)
+- **Accent**: Green (#00FF94)
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/56b328a8-26de-4980-9602-07d67e315eab) and click on Share -> Publish.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+MIT License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Links
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- [GitHub Repository](https://github.com/Adelodunpeter25/migrator)
+- [PyPI Package](https://pypi.org/project/migrator-cli)
+- [Documentation](https://migrator-cli.dev/docs)
+
+---
+
+Built with ❤️ for the Python community
+
