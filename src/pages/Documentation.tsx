@@ -36,46 +36,63 @@ const Documentation = () => {
               <Zap className="h-8 w-8 text-primary" />
               <h2 className="text-4xl font-bold">Quick Start</h2>
             </div>
-            <Card className="p-8 bg-card border-border">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-semibold mb-3">Installation</h3>
-                  <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                    <code className="text-base font-mono">pip install migrator-cli</code>
-                  </pre>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Installation Column */}
+              <Card className="p-8 bg-card border-border">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                  📦 Installation
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Quick install</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash</code>
+                    </pre>
+                  </div>
+                  
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Or using pip</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">pip install migrator-cli</code>
+                    </pre>
+                  </div>
+                  
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Or using uv</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">uv add migrator-cli</code>
+                    </pre>
+                  </div>
                 </div>
-                
-                <div>
-                  <h3 className="text-2xl font-semibold mb-3">Initialize Migrator</h3>
-                  <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                    <code className="text-base font-mono">migrator init</code>
-                  </pre>
-                  <p className="text-lg text-muted-foreground mt-2">
-                    This creates a migrations folder and necessary configuration files in your project.
-                  </p>
+              </Card>
+
+              {/* Migration Column */}
+              <Card className="p-8 bg-card border-border">
+                <h3 className="text-2xl font-semibold mb-4">🚀 Usage</h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Initialize Migrator</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">migrator init</code>
+                    </pre>
+                  </div>
+                  
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Create a migration</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">migrator makemigrations "add email to users"</code>
+                    </pre>
+                  </div>
+                  
+                  <div>
+                    <p className="text-lg text-muted-foreground mb-2"># Apply migrations</p>
+                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                      <code className="text-base font-mono">migrator migrate</code>
+                    </pre>
+                  </div>
                 </div>
-                
-                <div>
-                  <h3 className="text-2xl font-semibold mb-3">Create a Migration</h3>
-                  <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                    <code className="text-base font-mono">migrator makemigrations "description of changes"</code>
-                  </pre>
-                  <p className="text-lg text-muted-foreground mt-2">
-                    Automatically detects changes in your SQLAlchemy models and creates a migration file.
-                  </p>
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl font-semibold mb-3">Apply Migrations</h3>
-                  <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                    <code className="text-base font-mono">migrator migrate</code>
-                  </pre>
-                  <p className="text-lg text-muted-foreground mt-2">
-                    Applies all pending migrations to your database.
-                  </p>
-                </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
           </motion.section>
 
           {/* CLI Commands */}
