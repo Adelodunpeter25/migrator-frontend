@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { Github, Twitter, Mail } from "lucide-react";
 
-const Footer = () => {
+const Footer = memo(() => {
   return (
     <footer className="border-t-2 border-primary/20 py-6 px-4 sm:px-6 lg:px-8 mt-20 bg-card/30">
       <div className="container mx-auto max-w-6xl">
@@ -47,6 +48,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;

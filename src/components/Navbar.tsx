@@ -1,9 +1,10 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = memo(() => {
   return (
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
@@ -63,6 +64,8 @@ const Navbar = () => {
       </div>
     </motion.nav>
   );
-};
+});
+
+Navbar.displayName = "Navbar";
 
 export default Navbar;

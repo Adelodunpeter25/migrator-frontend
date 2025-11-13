@@ -1,13 +1,14 @@
+import { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Terminal } from "lucide-react";
 
-const TerminalDemo = () => {
-  const codeLines = [
+const TerminalDemo = memo(() => {
+  const codeLines = useMemo(() => [
     { text: "pip install migrator-cli", delay: 0 },
     { text: "migrator init", delay: 0.5 },
     { text: 'migrator makemigrations "add users"', delay: 1 },
     { text: "migrator migrate", delay: 1.5 },
-  ];
+  ], []);
 
   return (
     <div className="relative max-w-3xl mx-auto">
@@ -40,6 +41,8 @@ const TerminalDemo = () => {
       </div>
     </div>
   );
-};
+});
+
+TerminalDemo.displayName = "TerminalDemo";
 
 export default TerminalDemo;

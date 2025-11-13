@@ -1,31 +1,32 @@
+import { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Zap, Settings, Database, Terminal } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
-const features = [
-  {
-    icon: Zap,
-    title: "FastAPI & Flask Support",
-    description: "Works seamlessly with your existing FastAPI or Flask applications. No complex setup required.",
-  },
-  {
-    icon: Settings,
-    title: "Zero Config Setup",
-    description: "Get started in seconds with intelligent defaults. No configuration files to manage.",
-  },
-  {
-    icon: Database,
-    title: "Alembic Powered",
-    description: "Built on top of Alembic, the industry-standard migration tool for SQLAlchemy.",
-  },
-  {
-    icon: Terminal,
-    title: "Simple CLI",
-    description: "Intuitive command-line interface inspired by Django's migrations. Easy to learn and use.",
-  },
-];
+const Features = memo(() => {
+  const features = useMemo(() => [
+    {
+      icon: Zap,
+      title: "FastAPI & Flask Support",
+      description: "Works seamlessly with your existing FastAPI or Flask applications. No complex setup required.",
+    },
+    {
+      icon: Settings,
+      title: "Zero Config Setup",
+      description: "Get started in seconds with intelligent defaults. No configuration files to manage.",
+    },
+    {
+      icon: Database,
+      title: "Alembic Powered",
+      description: "Built on top of Alembic, the industry-standard migration tool for SQLAlchemy.",
+    },
+    {
+      icon: Terminal,
+      title: "Simple CLI",
+      description: "Intuitive command-line interface inspired by Django's migrations. Easy to learn and use.",
+    },
+  ], []);
 
-const Features = () => {
   return (
     <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
@@ -74,6 +75,8 @@ const Features = () => {
       </div>
     </section>
   );
-};
+});
+
+Features.displayName = "Features";
 
 export default Features;
