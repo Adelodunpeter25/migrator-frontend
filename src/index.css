@@ -54,6 +54,13 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+
+  /* Add padding for mobile bottom nav */
+  @media (max-width: 768px) {
+    body {
+      padding-bottom: 80px;
+    }
+  }
 }
 
 @layer utilities {
@@ -67,5 +74,9 @@ All colors MUST be HSL.
 
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
