@@ -3,6 +3,7 @@ import { Book, Terminal, Code, Database, GitBranch, Zap } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CopyButton from "@/components/CopyButton";
 
 const Documentation = () => {
   return (
@@ -44,24 +45,33 @@ const Documentation = () => {
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Quick install</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Quick install</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash</code>
+                      </pre>
+                      <CopyButton text="curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash" />
+                    </div>
                   </div>
                   
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Or using pip</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">pip install migrator-cli</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Or using pip</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">pip install migrator-cli</code>
+                      </pre>
+                      <CopyButton text="pip install migrator-cli" />
+                    </div>
                   </div>
                   
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Or using uv</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">uv add migrator-cli</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Or using uv</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">uv add migrator-cli</code>
+                      </pre>
+                      <CopyButton text="uv add migrator-cli" />
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -71,24 +81,33 @@ const Documentation = () => {
                 <h3 className="text-2xl font-semibold mb-4">🚀 Usage</h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Initialize Migrator</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">migrator init</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Initialize Migrator</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">migrator init</code>
+                      </pre>
+                      <CopyButton text="migrator init" />
+                    </div>
                   </div>
                   
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Create a migration</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">migrator makemigrations "add email to users"</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Create a migration</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">migrator makemigrations "add email to users"</code>
+                      </pre>
+                      <CopyButton text='migrator makemigrations "add email to users"' />
+                    </div>
                   </div>
                   
                   <div>
-                    <p className="text-lg text-muted-foreground mb-2"># Apply migrations</p>
-                    <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                      <code className="text-base font-mono">migrator migrate</code>
-                    </pre>
+                    <p className="text-lg text-muted-foreground mb-2">Apply migrations</p>
+                    <div className="relative">
+                      <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
+                        <code className="text-base font-mono">migrator migrate</code>
+                      </pre>
+                      <CopyButton text="migrator migrate" />
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -112,9 +131,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Initialize Migrator in your project. Creates the migrations directory and configuration.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator init
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator init
+                  </pre>
+                  <CopyButton text="migrator init" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -122,9 +144,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Create a new migration based on model changes.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator makemigrations "message"
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator makemigrations "message"
+                  </pre>
+                  <CopyButton text='migrator makemigrations "message"' />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -132,9 +157,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Apply all pending migrations to the database.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator migrate
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator migrate
+                  </pre>
+                  <CopyButton text="migrator migrate" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -142,9 +170,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   View migration history and current database version.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator history
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator history
+                  </pre>
+                  <CopyButton text="migrator history" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -152,9 +183,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Rollback to a previous migration version.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator downgrade -1
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator downgrade -1
+                  </pre>
+                  <CopyButton text="migrator downgrade -1" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -162,9 +196,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Show the current database migration version.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator current
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator current
+                  </pre>
+                  <CopyButton text="migrator current" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -172,9 +209,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Mark database as migrated without running migrations. Useful for existing databases.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator stamp head
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator stamp head
+                  </pre>
+                  <CopyButton text="migrator stamp head" />
+                </div>
               </Card>
 
               <Card className="p-6 bg-card border-border">
@@ -182,9 +222,12 @@ const Documentation = () => {
                 <p className="text-lg text-muted-foreground mb-3">
                   Show the current migration status and pending migrations.
                 </p>
-                <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
-                  migrator status
-                </pre>
+                <div className="relative">
+                  <pre className="bg-muted border border-border rounded-lg p-3 text-base font-mono">
+                    migrator status
+                  </pre>
+                  <CopyButton text="migrator status" />
+                </div>
               </Card>
             </div>
           </motion.section>
