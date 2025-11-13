@@ -14,22 +14,22 @@ const Navbar = () => {
       <div className="bg-background/80 backdrop-blur-xl border border-border/40 rounded-full px-8 py-4 shadow-lg">
         <div className="flex items-center gap-10">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-mono font-bold gradient-text">
+            <span className="text-3xl font-mono font-bold gradient-text">
               Migrator
             </span>
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#features" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            <Link to="/blog" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/blog" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               Blog
             </Link>
-            <Link to="/docs" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/docs" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </Link>
-            <Link to="/about" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/about" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
           </div>
