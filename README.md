@@ -35,7 +35,7 @@ Migrator simplifies database migrations for Python web applications. Built on to
 
 ```bash
 # Clone the repository
-git clone https://github.com/Adelodunpeter25/migrator-frontend.git
+git clone https://github.com/db-toolkit/migrator-frontend.git
 
 # Navigate to project directory
 cd migrator-frontend
@@ -90,7 +90,7 @@ src/
 ---
 ## Links
 
-- [GitHub Repository](https://github.com/Adelodunpeter25/migrator)
+- [GitHub Repository](https://github.com/db-toolkit/migrator)
 - [PyPI Package](https://pypi.org/project/migrator-cli)
 - [Documentation](https://migrator-cli.dev/docs)
 

@@ -38,7 +38,7 @@ const Navbar = memo(() => {
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
               <a 
-                href="https://github.com/Adelodunpeter25/migrator" 
+                href="https://github.com/db-toolkit/migrator" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="GitHub Repository"

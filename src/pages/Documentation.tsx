@@ -48,9 +48,9 @@ const Documentation = () => {
                     <p className="text-lg text-muted-foreground mb-2">Quick install</p>
                     <div className="relative">
                       <pre className="bg-muted border border-border rounded-lg p-4 overflow-x-auto">
-                        <code className="text-base font-mono">curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash</code>
+                        <code className="text-base font-mono">curl -sSL https://raw.githubusercontent.com/db-toolkit/migrator/main/install.sh | bash</code>
                       </pre>
-                      <CopyButton text="curl -sSL https://raw.githubusercontent.com/Adelodunpeter25/migrator/main/install.sh | bash" />
+                      <CopyButton text="curl -sSL https://raw.githubusercontent.com/db-toolkit/migrator/main/install.sh | bash" />
                     </div>
                   </div>
                   

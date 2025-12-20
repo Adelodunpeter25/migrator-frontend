@@ -15,7 +15,7 @@ const Footer = memo(() => {
           
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com/Adelodunpeter25/migrator" 
+              href="https://github.com/db-toolkit/migrator" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-muted transition-colors"

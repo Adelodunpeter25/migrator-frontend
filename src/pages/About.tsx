@@ -179,7 +179,7 @@ const About = () => {
                   asChild
                 >
                   <a 
-                    href="https://github.com/Adelodunpeter25/migrator" 
+                    href="https://github.com/db-toolkit/migrator" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -194,7 +194,7 @@ const About = () => {
                   asChild
                 >
                   <a 
-                    href="https://github.com/Adelodunpeter25/migrator/issues" 
+                    href="https://github.com/db-toolkit/migrator/issues" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

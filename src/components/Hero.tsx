@@ -57,7 +57,7 @@ const Hero = () => {
                 asChild
               >
                 <a 
-                  href="https://github.com/Adelodunpeter25/migrator" 
+                  href="https://github.com/db-toolkit/migrator" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
