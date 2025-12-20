@@ -8,8 +8,6 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import MobileNav from "@/components/MobileNav";
 
 const Index = lazy(() => import("./pages/Index"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Documentation = lazy(() => import("./pages/Documentation"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -26,8 +24,6 @@ const App = () => (
         <Suspense fallback={<div className="min-h-screen bg-background" />}>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/docs" element={<Documentation />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

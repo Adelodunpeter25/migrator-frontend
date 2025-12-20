@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, BookOpen, FileText, Mail, Info } from "lucide-react";
+import { Home, FileText, Mail, Info } from "lucide-react";
 
 const MobileNav = memo(() => {
   const location = useLocation();
@@ -8,7 +8,6 @@ const MobileNav = memo(() => {
   const navItems = [
     { path: "/", icon: Home, label: "Home" },
     { path: "/docs", icon: FileText, label: "Docs" },
-    { path: "/blog", icon: BookOpen, label: "Blog" },
     { path: "/about", icon: Info, label: "About" },
     { path: "/contact", icon: Mail, label: "Contact" },
   ];

@@ -21,9 +21,6 @@ const Navbar = memo(() => {
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/blog" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
-              Blog
-            </Link>
             <Link to="/docs" className="text-xl text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </Link>
