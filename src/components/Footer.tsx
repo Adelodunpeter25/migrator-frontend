@@ -43,7 +43,7 @@ const Footer = memo(() => {
         </div>
         
         <div className="mt-4 pt-4 border-t border-border/40 text-center text-base text-muted-foreground">
-          <p>© 2025 Migrator. Open source under MIT License.</p>
+          <p>© 2026 Migrator. Open source under MIT License.</p>
         </div>
       </div>
     </footer>
